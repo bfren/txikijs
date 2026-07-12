@@ -12,7 +12,7 @@ cmake -B build-slim \
     -DBUILD_WITH_GC_SECTIONS=ON \
     -DBUILD_WITH_STRIP=ON \
     -DCMAKE_EXE_LINKER_FLAGS="-static" \
-    -DCMAKE_FIND_LIBRARY_SUFFIXES=".a"
+    -DFFI_LIB=/usr/lib/libffi.a
 cmake --build build-slim
 
 # move binary to root
