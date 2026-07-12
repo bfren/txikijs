@@ -14,4 +14,4 @@ cmake -B build-slim \
 cmake --build build-slim
 
 # move binary to root
-mv ./build/tjs /
+mv ./build-slim/tjs /
