@@ -1,4 +1,4 @@
-name: build-alpine
+name: build
 
 on:
   workflow_dispatch:
@@ -9,7 +9,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        alpine: [ "3.24.1" ]
         txikijs: [ "26.6.0" ]
     steps:
       -
@@ -39,9 +38,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v7
         with:
-          file: ./Dockerfile.alpine
+          file: ./Dockerfile
           build-args: |
-            ALPINE=${{ matrix.alpine }}
             TXIKIJS=${{ matrix.txikijs }}
           push: true
           platforms: linux/amd64,linux/arm/v7,linux/arm64/v8
