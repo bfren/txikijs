@@ -9,7 +9,7 @@ ARG TXIKIJS=26.6.0
 # install prerequisites
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt update && \
-    apt install -y build-essential cmake libffi-dev
+    apt install -y build-essential cmake git libffi-dev
 
 # copy script files
 WORKDIR /tmp
