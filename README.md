@@ -1,20 +1,6 @@
 # txiki.js
 
-[txiki.js](https://txikijs.org) compiled for different Alpine &amp; Debian versions.
-
-## Matrix
-
-### Alpine
-
-| txiki.js     | 3.15        | 3.16          | 3.17          | 3.18          | 3.19          | 3.20          | 3.21          | 3.22          | 3.23          | 3.24          |
-| ------------ | :---------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| **26.6.0**   | &check;     | &check;       | &check;       | &check;       | &check;       | &check;       | &check;       | &check;       | &check;       | &check;       |
-
-### Debian
-
-| txiki.js     | 11 (bullseye) | 12 (bookworm) | 13 (trixie) |
-| ------------ | :-----------: | :-----------: | :---------: |
-| **26.6.0**   | &check;       | &check;       | &check;     |
+[txiki.js](https://txikijs.org) compiled and statically-linked.
 
 ## Usage
 
