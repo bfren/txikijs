@@ -11,7 +11,9 @@ cmake -B build-slim \
     -DBUILD_WITH_GC_SECTIONS=ON \
     -DBUILD_WITH_STRIP=ON \
     -DBUILD_WITH_FFI=OFF \
-    -DCMAKE_EXE_LINKER_FLAGS="-static"
+    -DCMAKE_EXE_LINKER_FLAGS="-static" \
+    -DCMAKE_FIND_LIBRARY_SUFFIXES=".a" \
+    -DCMAKE_C_FLAGS="-Wno-error=unknown-pragmas"
 cmake --build build-slim
 
 # move binary to root
