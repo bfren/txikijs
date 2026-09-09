@@ -6,6 +6,7 @@ set -eu
 cd txiki.js
 cmake -B build-slim \
     -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_WITH_WASM=OFF \
     -DBUILD_WITH_GC_SECTIONS=ON \
     -DBUILD_WITH_STRIP=ON \
     -DBUILD_WITH_FFI=OFF \
