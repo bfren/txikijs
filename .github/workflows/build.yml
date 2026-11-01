@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        txikijs: [ "26.6.0" ]
+        txikijs: [ "26.6.0", "26.11.0" ]
         platform: [ "linux/amd64", "linux/arm64", "linux/arm/v7" ]
         include:
           -
