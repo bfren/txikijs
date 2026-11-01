@@ -71,7 +71,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        txikijs: [ "26.6.0" ]
+        txikijs: [ "26.6.0", "26.11.0" ]
     runs-on: ubuntu-latest
     steps:
       -

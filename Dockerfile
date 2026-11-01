@@ -4,7 +4,7 @@ ARG ALPINE=3.24.2
 FROM alpine:${ALPINE} AS build
 
 # define ARGS
-ARG TXIKIJS=26.6.0
+ARG TXIKIJS=26.11.0
 
 # install prerequisites
 RUN apk add alpine-sdk cmake libffi-dev

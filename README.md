@@ -15,9 +15,10 @@ Each image contains only the `tjs` executable, at `/tjs`.
 
 ## Matrix
 
-| txiki.js   | amd64   | arm64   | arm/v7  |
-| ---------- | :-----: | :-----: | :-----: |
-| **26.6.0** | &check; | &check; | &check; |
+| txiki.js    | amd64   | arm64   | arm/v7  |
+| ----------- | :-----: | :-----: | :-----: |
+| **26.6.0**  | &check; | &check; | &check; |
+| **26.11.0** | &check; | &check; | &check; |
 
 ## Tags
 
@@ -25,7 +26,7 @@ Images are published to `quay.io/bfren-bin/txikijs`:
 
 | Tag                | Example          |
 | ------------------ | ---------------- |
-| `TXIKIJS-VERSION`  | `26.6.0-261030`  |
+| `TXIKIJS-VERSION`  | `26.11.0-261101` |
 
 `VERSION` is the build date (`yymmdd`) in [VERSION](VERSION) - pin it to get exactly the same binary every time.
 
@@ -44,7 +45,7 @@ Images are published to `quay.io/bfren-bin/txikijs`:
 
 ```Dockerfile
 # load txiki.js
-FROM quay.io/bfren-bin/txikijs:26.6.0-261030 AS tjs
+FROM quay.io/bfren-bin/txikijs:26.11.0-261101 AS tjs
 
 # use any version of Alpine or Debian
 FROM debian:13.7-slim AS build
